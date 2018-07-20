@@ -1,0 +1,34 @@
+#include "stdio.h"
+#include "stdlib.h"
+#include "time.h"
+int main()
+{
+	int ret = 0;
+	int num = 101;
+	int con =1;
+	while (con == 1)
+	{
+		srand((unsigned)time(NULL));
+		ret = rand() % 101;
+		printf("请猜一个数:>\n");
+		while (ret != num)
+		{
+			scanf("%d", &num);
+			if (num > ret)
+			{
+				printf("你猜的大了!\n");
+			}
+			else if (num<ret)
+			{
+				printf("你猜的小了!\n");
+			}
+			if (ret == num)
+			{
+				printf("恭喜你猜对了!\n输入1：再玩一次\n输入0：退出游戏\n");
+			}
+		}
+		printf("请输入你的选择:\n");
+		scanf("%d", &con);
+	}
+	return 0;
+}
