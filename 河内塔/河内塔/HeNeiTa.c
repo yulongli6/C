@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_DEPRECATE 1
 #include <stdio.h>
 #include <math.h>
+
 int Heneita(int n, char a, char b, char c)
 {
 	if (n == 1)
