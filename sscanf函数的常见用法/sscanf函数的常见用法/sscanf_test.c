@@ -5,6 +5,7 @@
 #include <string.h>
 
 
+
 static void sscanf_test(void)
 {
 	int ret;
